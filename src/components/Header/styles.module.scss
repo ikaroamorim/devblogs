@@ -8,20 +8,19 @@
     justify-content: space-between;
 
     .siteLogoContainer{
-        background-color: hotpink;
         min-width: 100px;
         height: 100%;
+        color: $font-white-color;
+        
     }
 
     .searchContainer{
         width: 150px;
         height: 100%;
-        background-color: green;
     }
 
     .userContainer{
         height: 100%;
         min-width: 200px;
-        background-color: greenyellow;
     }
 }
