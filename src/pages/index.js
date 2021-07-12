@@ -2,8 +2,14 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div>
-      Abc 123
-    </div>
+    <>
+    <Head>
+      <title>DevBlogs - Home</title>
+      <meta property="og:title" content="DevBlogs - Home" key="title" />
+    </Head>
+    <main>
+      
+    </main>
+    </>
   )
 }
