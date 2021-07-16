@@ -1,0 +1,83 @@
+@import '../../styles/variables.scss';
+
+.principal {
+  width         : 100%;
+  position      : relative;
+  padding-bottom: 28.125%;
+
+  .heroContainer {
+    width   : 100%;
+    height  : 100%;
+    position: absolute;
+    top     : 0;
+    left    : 0;
+    display : flex;
+
+    .twinContainers {
+      height         : 100%;
+      width          : 50%;
+      display        : flex;
+      flex-wrap      : wrap;
+      background-size: cover;
+
+      .cardContainer {
+        width          : 100%;
+        height         : 100%;
+        background-size: cover;
+        position       : relative;
+        transition     : filter 0.5s;
+
+        &:hover {
+          filter: brightness(0.8);
+        }
+
+        .cardInfoContainer {
+          position: absolute;
+          bottom  : 10%;
+          left    : 5%;
+          width: 90%;
+          white-space  : nowrap;
+          overflow     : hidden;
+          text-overflow: ellipsis;
+
+          p{
+            margin: 5px 0;
+            color: #555;
+          }
+        }
+
+        .cardIconContainer {
+          position : absolute;
+          top      : 5%;
+          right    : 5%;
+          font-size: 36px;
+
+          svg {
+            color: $highlight-color;
+          }
+        }
+      }
+
+      .smallItem {
+        height         : 50%;
+        width          : 50%;
+        background-size: cover;
+
+        .cardIconContainer {
+          font-size: 26px;
+        }
+
+        span,
+        p {
+          width: 100%;
+          font-size    : 14px;
+          white-space  : nowrap;
+          overflow     : hidden;
+          text-overflow: ellipsis;
+        }
+
+
+      }
+    }
+  }
+}
