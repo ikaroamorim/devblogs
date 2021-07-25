@@ -2,10 +2,19 @@
   margin : 0 auto;
   padding: 40px 30px;
   width  : 100%;
-  
+  overflow-y: scroll;
+
   .container{
     max-width: 1366px;
     margin: 0 auto;
-  }
 
+    .cardContainer{
+      margin-top: 40px;
+      min-height: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  }
 }
