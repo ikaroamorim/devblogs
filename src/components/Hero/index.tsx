@@ -1,40 +1,8 @@
 import styles from './styles.module.scss';
-import { DiHtml5, DiCss3, DiJsBadge, DiDatabase, DiGit, DiReact, DiVisualstudio } from "react-icons/di";
-
+import { IconChooser } from '../IconChooser';
 
 
 export function Hero() {
-
-    const iconChooser = (tecnologia) => {
-        switch (tecnologia) {
-            case 'html':
-                return <DiHtml5 />;
-                break;
-            case 'css':
-                return <DiCss3 />;
-                break;
-            case 'js':
-                return <DiJsBadge />;
-                break;
-            case 'dataBase':
-                return <DiDatabase />;
-                break;
-            case 'git':
-                return <DiGit />;
-                break;
-            case 'react':
-                return <DiReact />;
-                break;
-            case 'visualStudio':
-                return <DiVisualstudio />;
-                break;
-
-            default:
-                break;
-        }
-        return <DiHtml5></DiHtml5>
-    }
-
 
     const renderIndividualCard = (imageUrl, tituloNoticia, dataNoticia, tecnologia) => {
         return (
@@ -50,7 +18,7 @@ export function Hero() {
                 <div
                     className={styles.cardIconContainer}
                 >
-                    {iconChooser(tecnologia)}
+                    <IconChooser option={tecnologia}/>
                 </div>
 
             </div>
