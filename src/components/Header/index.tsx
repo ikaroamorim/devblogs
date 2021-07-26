@@ -1,6 +1,7 @@
 import styles from './styles.module.scss';
 
 import { BsSearch } from 'react-icons/bs';
+import Link from 'next/link'
 
 export function Header() {
 
@@ -13,7 +14,7 @@ export function Header() {
                 </button>
             </div>
             <div className={styles.userContainer}>
-                <button>Login</button>
+                <Link href={'/auth'}><button>Login</button></Link>
                 <button>Criar Conta</button>
             </div>
         </header>);
