@@ -5,17 +5,7 @@ import { Hero } from '../components/Hero';
 import { Card } from '../components/Card';
 
 export default function Home() {
-  const cards = ["1",
-    "1",
-    "1",
-    "1",
-    "1",
-    "1",
-    "1",
-    "1",
-    "1",
-    "1",
-  ]
+  const cards = ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"]
 
   return (
     <main className={styles.mainContainer}>
@@ -28,8 +18,9 @@ export default function Home() {
         <Hero />
 
         <div className={styles.cardContainer}>
-          {cards.map(item => {
+          {cards.map( (item, index) => {
             return <Card
+              key={index}
               imageUrl={"https://via.placeholder.com/1600x900"}
               articleTitle={"Titulo da Notícia"}
               articleDate={"14 de janeiro 2002"}
